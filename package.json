@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugin-consol-watermarking",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-consol-watermarking",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "a Cordova Plugin only applicable for ConSol app watermarking.."
+}
