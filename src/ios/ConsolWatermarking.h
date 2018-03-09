@@ -1,6 +1,6 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface MyCordovaPlugin : CDVPlugin {
+@interface ConsolWatermarking : CDVPlugin {
 }
 
 // The hooks for our plugin commands

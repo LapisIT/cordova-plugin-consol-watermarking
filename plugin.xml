@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-consol-watermarking"
-    version="1.0.0">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-consol-watermarking"
+        version="1.0.0">
     <name>cordova-plugin-consol-watermarking</name>
     <description></description>
     <license>MIT</license>
@@ -12,35 +12,42 @@
 
     <!-- android -->
     <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
-        <runs/>
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
 
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
-      </js-module>
-      <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
-          <param name="onload" value="true" />
-        </feature>
-      </config-file>
+            <!-- This is the window variable name you want, like window.ConsolWatermarking -->
+            <clobbers target="ConsolWatermarking"/>
+        </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ConsolWatermarking">
+                <param name="android-package" value="com.yarris.cordova.consol.watermarking.ConsolWatermarking"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
+        <source-file src="src/android/ConsolWatermarking.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+
+        <framework src="com.vinaygaba:rubberstamp:1.0.0" />
     </platform>
 
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
-            <clobbers target="MyCordovaPlugin" />
+            <clobbers target="ConsolWatermarking"/>
         </js-module>
         <config-file target="config.xml" parent="/*">
-            <feature name="MyCordovaPlugin">
-                <param name="ios-package" value="MyCordovaPlugin" onload="true" />
+            <feature name="ConsolWatermarking">
+                <param name="ios-package" value="ConsolWatermarking" onload="true"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/MyCordovaPlugin.h" />
-        <source-file src="src/ios/MyCordovaPlugin.m" />
+        <header-file src="src/ios/ConsolWatermarking.h"/>
+        <source-file src="src/ios/ConsolWatermarking.m"/>
     </platform>
 </plugin>

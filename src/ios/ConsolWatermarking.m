@@ -1,8 +1,8 @@
-#import "MyCordovaPlugin.h"
+#import "ConsolWatermarking.h"
 
 #import <Cordova/CDVAvailability.h>
 
-@implementation MyCordovaPlugin
+@implementation ConsolWatermarking
 
 - (void)pluginInitialize {
 }
