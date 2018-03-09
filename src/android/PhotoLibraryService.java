@@ -1,4 +1,4 @@
-package com.terikon.cordova.photolibrary;
+package com.yarris.cordova.consol.watermarking;
 
 import android.content.Context;
 import android.database.Cursor;

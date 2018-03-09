@@ -1,4 +1,4 @@
-package com.terikon.cordova.photolibrary;
+package com.yarris.cordova.consol.watermarking;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

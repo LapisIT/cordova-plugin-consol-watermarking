@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-photo-library" version="2.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Photo Library</name>
+<plugin id="cordova-plugin-consol-watermarking" version="2.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Watermarking</name>
     <js-module src="www/PhotoLibrary.js" name="PhotoLibrary">
         <clobbers target="cordova.plugins.photoLibrary" />
     </js-module>
@@ -9,7 +9,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PhotoLibrary" >
-                <param name="android-package" value="com.terikon.cordova.photolibrary.PhotoLibrary"/>
+                <param name="android-package" value="com.yarris.cordova.consol.watermarking.PhotoLibrary"/>
                 <param name="onload" value="true" />
             </feature>
             <allow-navigation href="cdvphotolibrary:*" />
@@ -19,20 +19,20 @@
             <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
-        <source-file src="src/android/JobDetails.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Margin.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/ReadPhoto.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Size.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Watermarking.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/LinePositions.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Photo.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Position.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/SavePhoto.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/Watermarker.java" target-dir="src/com/terikon/cordova/photolibrary" />
-        <source-file src="src/android/WatermarkLines.java" target-dir="src/com/terikon/cordova/photolibrary" />
+        <source-file src="src/android/JobDetails.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Margin.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/PhotoLibraryGetLibraryOptions.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/PhotoLibraryService.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/ReadPhoto.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Size.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Watermarking.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/LinePositions.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Photo.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/PhotoLibrary.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Position.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/SavePhoto.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/Watermarker.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
+        <source-file src="src/android/WatermarkLines.java" target-dir="src/com/yarris/cordova/consol/watermarking" />
 
         <framework src="com.vinaygaba:rubberstamp:1.0.0" />
     </platform>

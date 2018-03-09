@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-photo-library-tests">
+    id="cordova-plugin-consol-watermarking-tests">
     <name>Photo Library Tests</name>
     <js-module src="es5-shim/es5-shim.min.js" name="es5-shim" />
     <js-module src="es6-shim/es6-shim.min.js" name="es6-shim" />

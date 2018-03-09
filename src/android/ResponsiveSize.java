@@ -1,4 +1,4 @@
-package com.terikon.cordova.photolibrary;
+package com.yarris.cordova.consol.watermarking;
 
 /**
  * Created by hxg on 9/03/18.

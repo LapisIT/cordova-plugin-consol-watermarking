@@ -1,4 +1,4 @@
-package com.terikon.cordova.photolibrary;
+package com.yarris.cordova.consol.watermarking;
 
 /**
  * Created by gota on 8/03/18.

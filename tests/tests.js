@@ -2,12 +2,12 @@
 // But functionality provided by esshims can be used :)
 
 // Include shims for useful javascript functions to work on all devices
-cordova.require('cordova-plugin-photo-library-tests.es5-shim');
-cordova.require('cordova-plugin-photo-library-tests.es6-shim');
-cordova.require('cordova-plugin-photo-library-tests.es7-shim');
-cordova.require('cordova-plugin-photo-library-tests.blueimp-canvastoblob');
+cordova.require('cordova-plugin-consol-watermarking-tests.es5-shim');
+cordova.require('cordova-plugin-consol-watermarking-tests.es6-shim');
+cordova.require('cordova-plugin-consol-watermarking-tests.es7-shim');
+cordova.require('cordova-plugin-consol-watermarking-tests.blueimp-canvastoblob');
 
-var testUtils = cordova.require('cordova-plugin-photo-library-tests.test-utils');
+var testUtils = cordova.require('cordova-plugin-consol-watermarking-tests.test-utils');
 
 var expectedImages = [
     { fileName: 'Landscape_1.jpg', width: 600, height: 450, },
