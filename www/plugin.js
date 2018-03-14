@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-consol-watermarking.plugin", function(require, exports, module) {
 
 var exec = require('cordova/exec');
 
@@ -10,11 +11,11 @@ var ConsolWatermarking = {
   getDate: function(cb) {
     exec(cb, null, PLUGIN_NAME, 'getDate', []);
   },
-
   watermark: function(lines, cb) {
     exec(cb, null, PLUGIN_NAME, 'watermark', lines);
   },
-
 };
 
 module.exports = ConsolWatermarking;
+
+});

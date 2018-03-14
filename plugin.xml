@@ -30,6 +30,16 @@
         </config-file>
 
         <source-file src="src/android/ConsolWatermarking.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/Margin.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/Photo.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/ReadPhoto.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/ResponsiveSize.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/SavePhoto.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/Size.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/WatermarkConfig.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/Watermarker.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/Watermarking.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
+        <source-file src="src/android/WatermarkLines.java" target-dir="src/com/yarris/cordova/consol/watermarking"/>
 
         <framework src="com.vinaygaba:rubberstamp:1.0.0" />
     </platform>
