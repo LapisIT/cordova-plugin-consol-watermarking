@@ -9,7 +9,7 @@ var ConsolWatermarking = {
   },
   getDate: function(cb) {
     exec(cb, null, PLUGIN_NAME, 'getDate', []);
-  }
+  },
 
   watermark: function(lines, cb) {
     exec(cb, null, PLUGIN_NAME, 'watermark', lines);

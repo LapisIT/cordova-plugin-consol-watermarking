@@ -14,7 +14,6 @@
     <platform name="android">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
-
             <!-- This is the window variable name you want, like window.ConsolWatermarking -->
             <clobbers target="ConsolWatermarking"/>
         </js-module>
