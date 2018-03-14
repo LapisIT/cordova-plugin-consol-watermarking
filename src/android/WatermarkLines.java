@@ -17,8 +17,8 @@ public class WatermarkLines {
         this.id = id;
         this.address = address;
         this.name = name;
-        this.lat = lat;
-        this.lng = lng;
+        this.lat = lat +(char) 0x00B0+" S";
+        this.lng = lng +(char) 0x00B0+" E";
         this.date = date;
         this.time = time;
     }

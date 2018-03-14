@@ -78,11 +78,11 @@ public class Photo {
     Margin bottomLeftLine2() {
         switch (size.responsiveSize()) {
             case LARGE:
-                return new Margin(toInt(baseMargin() * 1.8), bottomLine2Y());
+                return new Margin(toInt(baseMargin() * 2.6), bottomLine2Y());
             case MEDIUM:
             case SMALL:
             default:
-                return new Margin(toInt(baseMargin() * 1.5), bottomLine2Y());
+                return new Margin(toInt(baseMargin() * 2.3), bottomLine2Y());
         }
 
     }

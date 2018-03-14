@@ -31,17 +31,17 @@ public class ConsolWatermarking extends CordovaPlugin {
       callbackContext.sendPluginResult(result);
     } else if(action.equals("watermark")) {
       String url = args.getString(0);
+      String id = args.getString(1);
+      String address = args.getString(2);
+      String name = args.getString(3);
+      String lat = args.getString(4);
+      String lng = args.getString(5);
+      String date = args.getString(6);
+      String time = args.getString(7);
 
       Log.d(TAG, "url: " + url);
 
-      WatermarkLines details = new WatermarkLines("B1427145",
-              "44, AARONS PASS NSW 2850",
-              "TEST_PROJ5",
-              "37.81671 "+(char) 0x00B0+" S",
-              "144.95625"+(char) 0x00B0+" E",
-              "2018-02-21",
-              "11:30:54 + 11:00");
-
+      WatermarkLines details = new WatermarkLines(id, address, name, lat, lng, date, time);
       Watermarking watermarking = new Watermarking(context(), url, details);
 
       final PluginResult result = new PluginResult(PluginResult.Status.OK, url);
