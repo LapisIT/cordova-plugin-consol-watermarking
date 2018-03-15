@@ -48,17 +48,17 @@ public class Watermarker {
         return new Photo(
                 markHeaderFooter(marking)
                 //top left
-                .mark(marking, lines.id, RubberStampPosition.TOP_LEFT, config.topLeftLine1)
-                .mark(marking, lines.address, RubberStampPosition.TOP_LEFT, config.topLeftLine2)
-                .mark(marking, lines.name, RubberStampPosition.TOP_LEFT, config.topLeftLine3)
-                //top right
-                .mark(marking, lines.name, RubberStampPosition.TOP_RIGHT, config.topRightLine1)
-                //bottom left
-                .mark(marking, lines.lat, RubberStampPosition.BOTTOM_LEFT, config.bottomLeftLine2)
-                .mark(marking, lines.lng, RubberStampPosition.BOTTOM_LEFT, config.bottomLeftLine1)
-                //bottom right
-                .mark(marking, lines.date, RubberStampPosition.BOTTOM_RIGHT, config.bottomRightLine2)
-                .mark(marking, lines.time, RubberStampPosition.BOTTOM_RIGHT, config.bottomRightLine1)
+//                .mark(marking, lines.id, RubberStampPosition.TOP_LEFT, config.topLeftLine1)
+//                .mark(marking, lines.address, RubberStampPosition.TOP_LEFT, config.topLeftLine2)
+//                .mark(marking, lines.name, RubberStampPosition.TOP_LEFT, config.topLeftLine3)
+//                //top right
+//                .mark(marking, lines.name, RubberStampPosition.TOP_RIGHT, config.topRightLine1)
+//                //bottom left
+//                .mark(marking, lines.lat, RubberStampPosition.BOTTOM_LEFT, config.bottomLeftLine2)
+//                .mark(marking, lines.lng, RubberStampPosition.BOTTOM_LEFT, config.bottomLeftLine1)
+//                //bottom right
+//                .mark(marking, lines.date, RubberStampPosition.BOTTOM_RIGHT, config.bottomRightLine2)
+//                .mark(marking, lines.time, RubberStampPosition.BOTTOM_RIGHT, config.bottomRightLine1)
                 .marking, photo.exif);
     }
 
