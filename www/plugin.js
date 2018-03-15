@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-consol-watermarking.plugin", function(require, exports, module) {
+//cordova.define("cordova-plugin-consol-watermarking.plugin", function(require, exports, module) {
 
 var exec = require('cordova/exec');
 
@@ -18,4 +18,4 @@ var ConsolWatermarking = {
 
 module.exports = ConsolWatermarking;
 
-});
+//});
