@@ -48,7 +48,7 @@ public class Watermarker {
         return new Photo(
                 markHeaderFooter(marking)
                 //top left
-//                .mark(marking, lines.id, RubberStampPosition.TOP_LEFT, config.topLeftLine1)
+                .mark(marking, lines.id, RubberStampPosition.TOP_LEFT, config.topLeftLine1)
 //                .mark(marking, lines.address, RubberStampPosition.TOP_LEFT, config.topLeftLine2)
 //                .mark(marking, lines.name, RubberStampPosition.TOP_LEFT, config.topLeftLine3)
 //                //top right
