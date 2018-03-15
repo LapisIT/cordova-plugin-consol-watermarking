@@ -63,6 +63,7 @@ public class Watermarker {
     }
 
     private Watermarker mark(Bitmap base, String watermark, RubberStampPosition position, Margin margin) {
+        Log.d(LOG_TAG, "mark watermark: " + watermark);
         RubberStampConfig config = new RubberStampConfig.RubberStampConfigBuilder()
                 .base(base)
                 .rubberStamp(watermark)

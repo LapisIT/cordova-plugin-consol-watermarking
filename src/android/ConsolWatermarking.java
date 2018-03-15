@@ -42,6 +42,7 @@ public class ConsolWatermarking extends CordovaPlugin {
       Log.d(TAG, "url: " + url);
 
       WatermarkLines details = new WatermarkLines(id, address, name, lat, lng, date, time);
+
       Watermarking watermarking = new Watermarking(context(), url, details);
 
       final PluginResult result = new PluginResult(PluginResult.Status.OK, url);

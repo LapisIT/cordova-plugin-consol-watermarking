@@ -1,3 +1,4 @@
+// comment out for 6.3.0, remove comment for 7.0.0
 //cordova.define("cordova-plugin-consol-watermarking.plugin", function(require, exports, module) {
 
 var exec = require('cordova/exec');

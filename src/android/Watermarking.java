@@ -19,7 +19,9 @@ public class Watermarking {
     boolean watermark(Context context, String photoUrl, WatermarkLines details) {
         Log.d(LOG_TAG, "watermark photoUrl: " + photoUrl);
         Photo photo = new ReadPhoto(photoUrl).read();
+        Log.d(LOG_TAG, "mark photo: " + photo);
         Photo created  = new Watermarker(context, photo, details).mark();
+        Log.d(LOG_TAG, "mark created: " + created);
         return new SavePhoto(photoUrl).save(created);
     }
 

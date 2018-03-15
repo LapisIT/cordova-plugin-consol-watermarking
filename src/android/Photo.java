@@ -82,7 +82,7 @@ public class Photo {
             case MEDIUM:
             case SMALL:
             default:
-                return new Margin(toInt(baseMargin() * 2.3), bottomLine2Y());
+                return new Margin(toInt(baseMargin() * 2), bottomLine2Y());
         }
 
     }
